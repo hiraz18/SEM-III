@@ -5,3 +5,4 @@ public class w3t1 {
         int sum=first+second;
         System.out.println(sum);
     }
+}
