@@ -1,9 +1,19 @@
-public class NewClass1 {
-    public static void main(String[] args) {
-        int number = 8;
+import java.util.Scanner; 
 
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(number + " x " + i + " = " + (number * i));
-        }
-    }
+public class NewClass2 { 
+    public static void main(String[] args) { 
+        Scanner scanner = new Scanner(System.in); 
+        
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt(); 
+        
+       
+        for (int i = 1; i <= 10; i++) { 
+            System.out.println(number + " x " + i + " = " + (number * i)); 
+        } 
+        
+        
+        scanner.close(); 
+    } 
 }
+
