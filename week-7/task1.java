@@ -1,20 +1,20 @@
 import java.util.Scanner;
-public class Mavenproject1 {
+public class rev {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         
         System.out.println("Enter number of elements: ");
-        int n = sc.nextInt();
+        int n = input.nextInt();
         int[] arr = new int[n];
 
         System.out.println("Enter elements in sorted order:");
         for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+            arr[i] = input.nextInt();
         }
 
         System.out.print("Enter element to search: ");
-        int target = sc.nextInt();
+        int target = input.nextInt();
 
         int s = 0;          
         int e = n - 1;      
@@ -41,6 +41,6 @@ public class Mavenproject1 {
             System.out.println("Element not found");
         }
 
-        sc.close();
+        input.close();
     }
 }
